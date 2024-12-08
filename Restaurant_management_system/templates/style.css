@@ -1,0 +1,53 @@
+/* Tổng thể */
+body {
+  background-color: #f8f9fa;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Nhóm nút */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-group a {
+  margin: 10px;
+  flex: 1; /* Để các nút chiếm toàn bộ không gian trên màn hình nhỏ */
+  max-width: 200px; /* Đặt kích thước tối đa trên màn hình lớn */
+}
+
+/* Responsive chỉnh chi tiết */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.8rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .btn-group a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding: 1rem 0.5rem;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
